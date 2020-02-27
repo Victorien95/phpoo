@@ -21,3 +21,4 @@ $moi = new Employe();
 
 // la flèche permet d'accèder à l'attribut
 echo $moi->prenom;
+// ezqr
