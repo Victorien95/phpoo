@@ -7,7 +7,6 @@ class Employe
      */
     public $prenom = 'Victorien';
 
-
     /**
      *  attribut de classe sans valeur par défaut (=null)
      * @var string
@@ -19,10 +18,31 @@ class Employe
      * @return string
      */
 
+    /**
+     * @var int
+     */
+    private $salaire = 3000;
+
     public function nomComplet()
     {
         // $this fait référence à l'objet instance de la classe qui appelle la méthode
         return $this->prenom . ' ' . $this->nom;
+    }
+
+    /**
+     * @return int
+     */
+    public function getSalaire()
+    {
+        // L'attribut privé salaire est accessible et modifiable depuis les méthodes de la classe
+        return $this->salaire;
+    }
+
+    // faire une méthode augmenterSalaire() qui prend en paramètre
+
+    public function augmenterSalaire($augmentation)
+    {
+        return $this->salaire += $augmentation;
     }
 }
 //----------------------------------------------------------------------------------------------------------------------
@@ -43,4 +63,12 @@ $toi->prenom = 'Ben';
 var_dump($moi, $toi);
 
 // appel de la méthode nomComplet()
-echo $moi->nomComplet();
+echo $moi->nomComplet(); echo '<br>';
+
+// fatal error : l'attribut salaire est privé
+//echo $moi->salaire;
+
+echo $moi->getSalaire();
+$moi->augmenterSalaire(10);
+echo $moi->getSalaire();
+
