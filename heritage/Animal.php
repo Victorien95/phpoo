@@ -44,5 +44,4 @@ abstract class Animal
      * @return string
      */
     abstract public function crier():string;
-
 }
