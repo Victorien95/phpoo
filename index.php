@@ -1,4 +1,5 @@
 <?php
+
 class Employe
 {
     /**
@@ -23,6 +24,8 @@ class Employe
      */
     private $salaire = 3000;
 
+
+
     public function nomComplet()
     {
         // $this fait référence à l'objet instance de la classe qui appelle la méthode
@@ -38,14 +41,26 @@ class Employe
         return $this->salaire;
     }
 
-    // faire une méthode augmenterSalaire() qui prend en paramètre
 
+    // faire une méthode augmenterSalaire() qui prend en paramètre le niveau d'augmentation et qui augmente le salaire de l'employé
+
+    /**
+     * @param $augmentation
+     */
     public function augmenterSalaire($augmentation)
     {
-        return $this->salaire += $augmentation;
+        $this->salaire += $augmentation;
     }
 }
 //----------------------------------------------------------------------------------------------------------------------
+
+function br($nb = 1)
+{
+    for ($i = 0; $i < $nb; $i++)
+    {
+        echo '<br>';
+    }
+}
 
 // instanciation de la classe
 // $moi est un objet instance de la classe Employé
@@ -69,6 +84,7 @@ echo $moi->nomComplet(); echo '<br>';
 //echo $moi->salaire;
 
 echo $moi->getSalaire();
-$moi->augmenterSalaire(10);
+$moi->augmenterSalaire('10');
+br();
 echo $moi->getSalaire();
 
