@@ -56,9 +56,9 @@ class Abonne
         $this->prenom = $prenom;
         return $this;
     }
-//################################################# FONCTIONS ##########################################################
+//################################################# METHODE ##########################################################
 
-//------------------------------------------- FONCTIONS findAll --------------------------------------------------------
+//------------------------------------------- METHODE findAll --------------------------------------------------------
     /**
      * Retourne tous les abonnés de la bdd sous la forme d'un tableau
      * @return Abonne[]
@@ -82,18 +82,70 @@ class Abonne
        }
        return $abonnes;
     }
-//------------------------------------------- FONCTIONS save -----------------------------------------------------------
+//------------------------------------------- METHODE find -------------------------------------------------------------
+
+    /**
+     * retourne un abonné à partir de son id
+     *
+     * @param int $id l'id de l'abonné
+     * @return static|null
+     */
+    public static function find(int $id): ?self
+    {
+       $pdo = Cnx::getInstance();
+       $stmt = $pdo->query("SELECT * FROM abonne WHERE id = $id");
+       $data = $stmt->fetch();
+
+       if (empty($data))
+       {
+           return null;
+       }
+
+       $abonne = new self();
+       $abonne
+           ->setId($data['id'])
+           ->setPrenom($data['prenom'])
+       ;
+       return $abonne;
+    }
+
+
+//------------------------------------------- METHODE save -------------------------------------------------------------
 
     public function save()
     {
         $pdo = Cnx::getInstance();
-        $query = 'INSERT INTO abonne(prenom) VALUES (:prenom)';
-        $stmt = $pdo->prepare($query);
-        $stmt->execute([
-            ':prenom' => $this->prenom
-        ]);
+        if (is_null($this->id)){
+            $this->insert();
 
+        }else{
+            $this->update();
+        }
     }
+
+//------------------------------------------- METHODE delete -----------------------------------------------------------
+    public function delete()
+    {
+        $pdo = Cnx::getInstance();
+        $query = "DELETE FROM abonne WHERE id = $this->id";
+        $pdo->exec($query);
+    }
+
+//------------------------------------------- METHODE hasemprunt -------------------------------------------------------
+
+
+    public function hasEmprunts():bool
+    {
+        $pdo = Cnx::getInstance();
+        $query = "SELECT count(*) FROM emprunt WHERE id_abanne = $this->id";
+        $stmt = $pdo->query($query);
+
+        return $stmt->fetchColumn() != 0;
+    }
+
+
+
+//------------------------------------------- METHODE validate ---------------------------------------------------------
 
     public function validate(array &$errors):bool
     {
@@ -106,5 +158,34 @@ class Abonne
         }
         return empty($errors);
     }
+//------------------------------------------- METHODE inset + update appelées dans save --------------------------------
 
+    /**
+     * @param 'appelé dans méthode save pour inserer un abonné si celui-ci n'existe pas
+     */
+    private function insert()
+    {
+        $pdo = Cnx::getInstance();
+
+        $query = 'INSERT INTO abonne(prenom) VALUES (:prenom)';
+        $stmt = $pdo->prepare($query);
+        $stmt->execute([
+            ':prenom' => $this->prenom
+        ]);
+    }
+
+    /**
+     * appelé dans méthode save pour update un abonné si celui-ci existe déjà en BDD
+     */
+    private function update()
+    {
+        $pdo = Cnx::getInstance();
+
+        $query = "UPDATE abonne SET prneom = :prenom WHERE id = :id";
+        $stmt = $pdo->prepare($query);
+        $stmt->execute([
+            ':prenom' => $this->prenom,
+            ':id' => $this->id
+        ]);
+    }
 }

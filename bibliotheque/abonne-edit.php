@@ -2,7 +2,14 @@
 use Model\Abonne;
 
 require_once 'autoload.php';
-$abonne = new Abonne();
+if (isset($_GET['id']))
+{ //modification
+    $abonne = Abonne::find($_GET['id']);
+}else{ // creation
+    $abonne = new Abonne();
+}
+
+
 if (!empty($_POST))
 {
     $abonne->setPrenom($_POST['prenom']);
@@ -29,7 +36,7 @@ if (!empty($errors)):
 <form action="" method="post">
     <div class="form-group">
         <label for="">Prénom</label>
-        <input type="text" name="prenom" class="form-control">
+        <input type="text" name="prenom" value="<?= $abonne->getPrenom() ?>" class="form-control">
     </div>
     <div class="text-right">
         <button type="submit" class="btn btn-primary">Enregistrer</button>

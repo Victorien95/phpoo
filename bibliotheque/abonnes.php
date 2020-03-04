@@ -26,7 +26,10 @@ require 'layout/header.php';
         <tr>
             <td><?= $abonne->getId() ?></td>
             <td><?= $abonne->getPrenom() ?></td>
-            <td></td>
+            <td>
+                <a href="abonne-edit.php?id=<?= $abonne->getId() ?>" class="btn btn-primary">Modifier</a>
+                <a href="abonne-delete.php?id=<?= $abonne->getId() ?>" class="btn btn-danger">Supprimer</a>
+            </td>
         </tr>
     <?php endforeach; ?>
 
