@@ -1,3 +1,4 @@
+<?php require_once 'includes/init.php'?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -19,9 +20,13 @@
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
             <a class="nav-item nav-link active" href="abonnes.php">Gestion abonnés <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link active" href="emprunt.php">Gestion des emprunts <span class="sr-only">(current)</span></a>
         </div>
     </div>
 </nav>
 <div class="container">
+    <?php use App\FlashMessage;
+    FlashMessage::display()
+    ?>
 
 

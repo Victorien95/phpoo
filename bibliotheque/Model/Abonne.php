@@ -17,6 +17,11 @@ class Abonne
      * @var string|null
      */
     private $prenom;
+
+    public function __toString()
+    {
+        return $this->prenom;
+    }
 //######################################################################################################################
 //------------------------------------------- GET/SET ID ---------------------------------------------------------------
     /**
@@ -137,7 +142,7 @@ class Abonne
     public function hasEmprunts():bool
     {
         $pdo = Cnx::getInstance();
-        $query = "SELECT count(*) FROM emprunt WHERE id_abanne = $this->id";
+        $query = "SELECT count(*) FROM emprunt WHERE id_abonne = $this->id";
         $stmt = $pdo->query($query);
 
         return $stmt->fetchColumn() != 0;

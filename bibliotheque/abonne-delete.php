@@ -1,8 +1,9 @@
 <?php
 
+use App\FlashMessage;
 use Model\Abonne;
 
-require_once 'autoload.php';
+require_once 'includes/init.php';
 
 // Si on a reçu un id dans l'url
 if(isset($_GET['id'])){
@@ -15,6 +16,9 @@ if(isset($_GET['id'])){
         if (!$abonne->hasEmprunts())
         {
             $abonne->delete();
+            FlashMessage::set("L'abonné est supprimé");
+        }else{
+            FlashMessage::set("L'abonné ne peut pas être supprimé", 'danger');
         }
     }
 }

@@ -2,13 +2,18 @@
 
 use App\Cnx;
 use Model\Abonne;
+use Model\Emprunt;
 
-require_once 'autoload.php';
+
+require_once 'includes/init.php';
 
 $abonnes = Abonne::findAll();
 require 'layout/header.php';
 ?>
 <h1>Gestion abonnés</h1>
+
+
+
 <a href="abonne-edit.php" class="btn btn-outline-primary mb-3">
     Ajouter un abonné
 </a>

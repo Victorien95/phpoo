@@ -1,7 +1,9 @@
 <?php
+
+use App\FlashMessage;
 use Model\Abonne;
 
-require_once 'autoload.php';
+require_once 'includes/init.php';
 if (isset($_GET['id']))
 { //modification
     $abonne = Abonne::find($_GET['id']);
@@ -17,7 +19,10 @@ if (!empty($_POST))
     $errors = [];
     if ($abonne->validate($errors)){
         $abonne->save();
+        FlashMessage::set("L'abonné est enregistré");
+
         header('Location: abonnes.php');
+        die;
     }
 }
 
@@ -32,6 +37,7 @@ if (!empty($errors)):
     <?= implode('<br>', $errors) ?>
 </div>
 <?php endif; ?>
+
 
 <form action="" method="post">
     <div class="form-group">

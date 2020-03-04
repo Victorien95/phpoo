@@ -2,7 +2,7 @@
 
 use App\Cnx;
 
-require_once 'autoload.php';
+require_once 'includes/init.php';
 // PDO est instancié puis retourné
 $pdo = Cnx::getInstance();
 
