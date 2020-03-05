@@ -63,6 +63,9 @@ class User
      */
     public function setCivility(string $civility): User
     {
+        if(!in_array($civility, ['Mr', 'Mme'])){
+            throw new UnexpectedValueException('Civilité non reconnue');
+        }
         $this->civility = $civility;
         return $this;
     }
