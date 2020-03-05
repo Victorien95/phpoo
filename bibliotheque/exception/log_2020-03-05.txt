@@ -1,0 +1,8 @@
+[2020-03-05 09:06:18] C:\wamp64\www\PHPOO\bibliotheque\exception\User.php line 67 Civilité non reconnue
+#0 C:\wamp64\www\PHPOO\bibliotheque\exception\User.php(26): User->setCivility('Monsieur')
+#1 C:\wamp64\www\PHPOO\bibliotheque\exception\index.php(18): User->__construct('Ben', 'Monsieur', Object(DateTime))
+#2 {main}
+[2020-03-05 09:06:18] C:\wamp64\www\PHPOO\bibliotheque\exception\User.php line 85 Argument 1 passed to User::setBirthdate() must be an instance of DateTime, string given, called in C:\wamp64\www\PHPOO\bibliotheque\exception\User.php on line 27
+#0 C:\wamp64\www\PHPOO\bibliotheque\exception\User.php(27): User->setBirthdate('2010-01-02')
+#1 C:\wamp64\www\PHPOO\bibliotheque\exception\index.php(29): User->__construct('Ben', 'Mr', '2010-01-02')
+#2 {main}

@@ -1,0 +1,84 @@
+[2020-03-05 08:41:02] C:\wamp64\www\PHPOO\bibliotheque\exception\User.php line 46 Le nom est trop long
+#0 C:\wamp64\www\PHPOO\bibliotheque\exception\User.php(25): User->setName('aaaaaaaaaaaaaaa...')
+#1 C:\wamp64\www\PHPOO\bibliotheque\exception\index.php(7): User->__construct('aaaaaaaaaaaaaaa...', 'Mr', Object(DateTime))
+#2 {main}
+[2020-03-05 08:41:41] C:\wamp64\www\PHPOO\bibliotheque\exception\User.php line 46 Le nom est trop long
+#0 C:\wamp64\www\PHPOO\bibliotheque\exception\User.php(25): User->setName('aaaaaaaaaaaaaaa...')
+#1 C:\wamp64\www\PHPOO\bibliotheque\exception\index.php(7): User->__construct('aaaaaaaaaaaaaaa...', 'Mr', Object(DateTime))
+#2 {main}
+[2020-03-05 08:41:41] C:\wamp64\www\PHPOO\bibliotheque\exception\User.php line 46 Le nom est trop long
+#0 C:\wamp64\www\PHPOO\bibliotheque\exception\User.php(25): User->setName('aaaaaaaaaaaaaaa...')
+#1 C:\wamp64\www\PHPOO\bibliotheque\exception\index.php(7): User->__construct('aaaaaaaaaaaaaaa...', 'Mr', Object(DateTime))
+#2 {main}
+[2020-03-05 08:47:25] C:\wamp64\www\PHPOO\bibliotheque\exception\User.php line 46 Le nom est trop long
+#0 C:\wamp64\www\PHPOO\bibliotheque\exception\User.php(25): User->setName('aaaaaaaaaaaaaaa...')
+#1 C:\wamp64\www\PHPOO\bibliotheque\exception\index.php(7): User->__construct('aaaaaaaaaaaaaaa...', 'Mr', Object(DateTime))
+#2 {main}
+[2020-03-05 08:48:16] C:\wamp64\www\PHPOO\bibliotheque\exception\User.php line 46 Le nom est trop long
+#0 C:\wamp64\www\PHPOO\bibliotheque\exception\User.php(25): User->setName('aaaaaaaaaaaaaaa...')
+#1 C:\wamp64\www\PHPOO\bibliotheque\exception\index.php(7): User->__construct('aaaaaaaaaaaaaaa...', 'Mr', Object(DateTime))
+#2 {main}
+[2020-03-05 08:48:16] C:\wamp64\www\PHPOO\bibliotheque\exception\User.php line 67 Civilité non reconnue
+#0 C:\wamp64\www\PHPOO\bibliotheque\exception\User.php(26): User->setCivility('Monsieur')
+#1 C:\wamp64\www\PHPOO\bibliotheque\exception\index.php(19): User->__construct('Ben', 'Monsieur', Object(DateTime))
+#2 {main}
+[2020-03-05 08:48:28] C:\wamp64\www\PHPOO\bibliotheque\exception\User.php line 46 Le nom est trop long
+#0 C:\wamp64\www\PHPOO\bibliotheque\exception\User.php(25): User->setName('aaaaaaaaaaaaaaa...')
+#1 C:\wamp64\www\PHPOO\bibliotheque\exception\index.php(7): User->__construct('aaaaaaaaaaaaaaa...', 'Mr', Object(DateTime))
+#2 {main}
+[2020-03-05 08:48:28] C:\wamp64\www\PHPOO\bibliotheque\exception\User.php line 67 Civilité non reconnue
+#0 C:\wamp64\www\PHPOO\bibliotheque\exception\User.php(26): User->setCivility('Monsieur')
+#1 C:\wamp64\www\PHPOO\bibliotheque\exception\index.php(19): User->__construct('Ben', 'Monsieur', Object(DateTime))
+#2 {main}
+[2020-03-05 08:49:11] C:\wamp64\www\PHPOO\bibliotheque\exception\User.php line 46 Le nom est trop long
+#0 C:\wamp64\www\PHPOO\bibliotheque\exception\User.php(25): User->setName('aaaaaaaaaaaaaaa...')
+#1 C:\wamp64\www\PHPOO\bibliotheque\exception\index.php(7): User->__construct('aaaaaaaaaaaaaaa...', 'Mr', Object(DateTime))
+#2 {main}
+[2020-03-05 08:49:13] C:\wamp64\www\PHPOO\bibliotheque\exception\User.php line 46 Le nom est trop long
+#0 C:\wamp64\www\PHPOO\bibliotheque\exception\User.php(25): User->setName('aaaaaaaaaaaaaaa...')
+#1 C:\wamp64\www\PHPOO\bibliotheque\exception\index.php(7): User->__construct('aaaaaaaaaaaaaaa...', 'Mr', Object(DateTime))
+#2 {main}
+[2020-03-05 08:50:48] C:\wamp64\www\PHPOO\bibliotheque\exception\User.php line 46 Le nom est trop long
+#0 C:\wamp64\www\PHPOO\bibliotheque\exception\User.php(25): User->setName('aaaaaaaaaaaaaaa...')
+#1 C:\wamp64\www\PHPOO\bibliotheque\exception\index.php(7): User->__construct('aaaaaaaaaaaaaaa...', 'Mr', Object(DateTime))
+#2 {main}
+[2020-03-05 08:50:48] C:\wamp64\www\PHPOO\bibliotheque\exception\User.php line 67 Civilité non reconnue
+#0 C:\wamp64\www\PHPOO\bibliotheque\exception\User.php(26): User->setCivility('Monsieur')
+#1 C:\wamp64\www\PHPOO\bibliotheque\exception\index.php(19): User->__construct('Ben', 'Monsieur', Object(DateTime))
+#2 {main}
+[2020-03-05 08:52:44] C:\wamp64\www\PHPOO\bibliotheque\exception\User.php line 67 Civilité non reconnue
+#0 C:\wamp64\www\PHPOO\bibliotheque\exception\User.php(26): User->setCivility('Monsieur')
+#1 C:\wamp64\www\PHPOO\bibliotheque\exception\index.php(19): User->__construct('Ben', 'Monsieur', Object(DateTime))
+#2 {main}
+[2020-03-05 08:58:03] C:\wamp64\www\PHPOO\bibliotheque\exception\User.php line 67 Civilité non reconnue
+#0 C:\wamp64\www\PHPOO\bibliotheque\exception\User.php(26): User->setCivility('Monsieur')
+#1 C:\wamp64\www\PHPOO\bibliotheque\exception\index.php(19): User->__construct('Ben', 'Monsieur', Object(DateTime))
+#2 {main}
+[2020-03-05 08:59:21] C:\wamp64\www\PHPOO\bibliotheque\exception\User.php line 67 Civilité non reconnue
+#0 C:\wamp64\www\PHPOO\bibliotheque\exception\User.php(26): User->setCivility('Monsieur')
+#1 C:\wamp64\www\PHPOO\bibliotheque\exception\index.php(19): User->__construct('Ben', 'Monsieur', Object(DateTime))
+#2 {main}
+[2020-03-05 08:59:43] C:\wamp64\www\PHPOO\bibliotheque\exception\User.php line 67 Civilité non reconnue
+#0 C:\wamp64\www\PHPOO\bibliotheque\exception\User.php(26): User->setCivility('Monsieur')
+#1 C:\wamp64\www\PHPOO\bibliotheque\exception\index.php(19): User->__construct('Ben', 'Monsieur', Object(DateTime))
+#2 {main}
+[2020-03-05 08:59:45] C:\wamp64\www\PHPOO\bibliotheque\exception\User.php line 67 Civilité non reconnue
+#0 C:\wamp64\www\PHPOO\bibliotheque\exception\User.php(26): User->setCivility('Monsieur')
+#1 C:\wamp64\www\PHPOO\bibliotheque\exception\index.php(19): User->__construct('Ben', 'Monsieur', Object(DateTime))
+#2 {main}
+[2020-03-05 09:00:54] C:\wamp64\www\PHPOO\bibliotheque\exception\User.php line 67 Civilité non reconnue
+#0 C:\wamp64\www\PHPOO\bibliotheque\exception\User.php(26): User->setCivility('Monsieur')
+#1 C:\wamp64\www\PHPOO\bibliotheque\exception\index.php(19): User->__construct('Ben', 'Monsieur', Object(DateTime))
+#2 {main}
+[2020-03-05 09:00:54] C:\wamp64\www\PHPOO\bibliotheque\exception\User.php line 85 Argument 1 passed to User::setBirthdate() must be an instance of DateTime, string given, called in C:\wamp64\www\PHPOO\bibliotheque\exception\User.php on line 27
+#0 C:\wamp64\www\PHPOO\bibliotheque\exception\User.php(27): User->setBirthdate('2010-01-02')
+#1 C:\wamp64\www\PHPOO\bibliotheque\exception\index.php(30): User->__construct('Ben', 'Mr', '2010-01-02')
+#2 {main}
+[2020-03-05 09:02:14] C:\wamp64\www\PHPOO\bibliotheque\exception\User.php line 67 Civilité non reconnue
+#0 C:\wamp64\www\PHPOO\bibliotheque\exception\User.php(26): User->setCivility('Monsieur')
+#1 C:\wamp64\www\PHPOO\bibliotheque\exception\index.php(18): User->__construct('Ben', 'Monsieur', '2010-05-01')
+#2 {main}
+[2020-03-05 09:02:15] C:\wamp64\www\PHPOO\bibliotheque\exception\User.php line 67 Civilité non reconnue
+#0 C:\wamp64\www\PHPOO\bibliotheque\exception\User.php(26): User->setCivility('Monsieur')
+#1 C:\wamp64\www\PHPOO\bibliotheque\exception\index.php(18): User->__construct('Ben', 'Monsieur', '2010-05-01')
+#2 {main}

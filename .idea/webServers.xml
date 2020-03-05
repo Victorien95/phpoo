@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="a6fb20bc-e685-4516-af1b-b0841ec48fe2" name="PHP" url="http://localhost/phpoo">
+        <fileTransfer port="0" mountedRoot="C:\wamp64\www\PHPOO" accessType="MOUNT" />
+      </webServer>
+    </option>
+  </component>
+</project>
